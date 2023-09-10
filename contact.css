@@ -1,0 +1,106 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.contact-main {
+  display: block;
+  width: 100%;
+  height: auto;
+  background-color: #2e2626;
+  color: #bbbbbb;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 170%;
+  text-align: center;
+}
+
+.contact-info h3 {
+  padding: 0 auto;
+  padding-top: 45px;
+  font-size: 160%;
+  font-weight: 500;
+}
+
+.contact-info h4 {
+  padding: 0 auto;
+  padding-top: 1.5em;
+  font-size: 140%;
+  font-weight: 600;
+}
+
+.contact-info p {
+  padding: 0 auto;
+  padding-top: 10px;
+}
+
+.contact-info p:last-child {
+  padding-top: 1em;
+  padding-bottom: 3em;
+}
+
+@media screen and (max-width: 817px){
+  iframe{
+     width: 95%;
+  }
+}
+
+@media screen and (max-width: 522px){
+  .contact-main {
+    font-size: 120%
+  }
+  .contact-info h3{
+    font-size: 160%;
+  }
+  .contact-info h4{
+    font-size: 140%;
+  }
+}
+
+@media screen and (max-width: 373px){
+  .contact-info p {
+    font-size: 90%;
+  }
+}
+
+
+
+
+
+/*
+.facebook {
+  width: auto;
+  height: auto;
+  align-self: center;
+  padding: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  margin-top: 1em;
+  margin-left: 45%;
+  margin-right: 45%;
+  background-color: rgba(255,255,255,0.2)
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}

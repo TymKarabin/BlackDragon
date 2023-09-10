@@ -1,0 +1,73 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.team-main {
+  display: block;
+  width: 100%;
+  height: auto;
+  background-color: #2e2626;
+  color: #bbbbbb;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 165%;
+  text-align: left;
+}
+
+.t-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+.t-gallery figure {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 2em;
+  background-color: rgb(78, 78, 78);
+  object-fit: cover;
+}
+
+.t-gallery figure img {
+  margin: 1.5em;
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.t-gallery figure figcaption {
+  padding: 0 auto;
+  padding-bottom: 3em;
+  padding-right: auto;
+  margin: 0 auto;
+  margin-left: 1.5em;
+}
+
+@media screen and (max-width: 525px){
+  .t-gallery figure{
+    margin: 0 auto;
+    margin-top: 2em;
+  }
+  .t-gallery figure:last-child{
+    margin-bottom: 3em;
+  }
+  .t-gallery figure img{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 380px){
+  .t-gallery figure img{
+    width: 70%;
+  }
+}

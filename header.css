@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.header {
+    display: block;
+    margin: 0 auto;
+    background-color: #24262b;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .inner-header {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    background-color: #24262b;
+  }
+
+  .logo-container {
+    justify-content: center;
+    align-items: center;
+    display: block;
+  }
+
+  .logo {
+    border-radius: 50%;
+    padding: 0.9em;
+    padding-left: 0.9em;
+    margin-top: 0.7em;
+    width: 17vh;
+    height: 17vh;
+  }
+  
+  .title-container {
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    display: flex;
+    margin: auto;
+  }
+
+  .title-container h1 {
+    color: #bbbbbb;
+    font-size: 4vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    text-align: center;
+  }
+
+  .title-container span {
+    font-weight: 600;
+    color: #8a2929;
+  }
+
+  .navbar {
+    background-color: #24262b;
+    align-items: right;
+    height: 5em;
+    width: 60%;
+    font-family: 'Quicksand', sans-serif;
+    color: #bbbbbb;
+    font-size: 3vh;
+  }
+
+  nav ul li a {
+    color: #bbbbbb;
+    margin: 0 0.4rem;
+    padding: 0.2rem;
+    display: block;
+    transition: all 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    color: #24262b;
+    background-color: lightgray;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+  }
+
+  /*responsive*/
+  @media screen and (max-width: 934px) {
+    .header a {
+      float: center;
+      display: block;
+      text-align: center;
+    }
+    .inner-header {
+      display: block;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+    .navbar{
+      width: 100%;
+    }
+  }
+
+  /*.navbar a::before {
+    content: '';
+    position: absolute;
+    background-color: #e91e63;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s ease-in;
+  }
+
+  .navbar a:hover::after {
+    width: 100%;
+  } */
